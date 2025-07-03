@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kemampuan - Delon Dede Afdilah</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Delon Dede Afdilah</a>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Beranda</a>
+        <a href="sertifikat.html">Sertifikat Saya</a>
+        <a href="#skills.html">Keahlian</a>
+        <a href="contact.html">Hubungi Saya</a>
+      </nav>
+    </header>
+
+    <section class="skills">
+      <h1>My Skills</h1>
+      <div class="skills-container">
+        <div class="skill-item" data-skill="PHP">
+          <div class="skill-logo">
+            <i class="fab fa-php"></i>
+          </div>
+          <h3>PHP</h3>
+          <p>Backend Development</p>
+        </div>
+
+        <div class="skill-item" data-skill="HTML">
+          <div class="skill-logo">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Web Structure</p>
+        </div>
+
+        <div class="skill-item" data-skill="CSS">
+          <div class="skill-logo">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Web Styling</p>
+        </div>
+
+        <div class="skill-item" data-skill="JavaScript">
+          <div class="skill-logo">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interactive Development</p>
+        </div>
+
+
+    <style>
+      body {
+        background-color: #191919;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        padding: 1rem 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .logo {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #e3651d;
+        text-decoration: none;
+      }
+
+      .menu-toggle {
+        display: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+      }
+
+      nav {
+        display: flex;
+        gap: 2rem;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 4rem;
+        font-size: 1.8rem;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+      }
+
+      nav a.active,
+      nav a:hover {
+        color: #e3651d;
+        border-bottom: 3px solid #e3651d;
+      }
+
+      .skills {
+        padding: 8rem 9% 5rem;
+        text-align: center;
+      }
+
+      .skills h1 {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+        color: #e3651d;
+        text-shadow: 0 0 20px rgba(227, 101, 29, 0.3);
+      }
+
+      .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .skill-item {
+        background: linear-gradient(145deg, #222, #2a2a2a);
+        border-radius: 20px;
+        padding: 3rem 2rem;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid transparent;
+      }
+
+      .skill-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, rgba(227, 101, 29, 0.1), transparent);
+        transform: translateX(-100%);
+        transition: transform 0.6s ease;
+      }
+
+      .skill-item:hover::before {
+        transform: translateX(100%);
+      }
+
+      .skill-item:hover {
+        transform: translateY(-15px) scale(1.05);
+        border-color: #e3651d;
+        box-shadow: 
+          0 20px 40px rgba(0, 0, 0, 0.4),
+          0 0 30px rgba(227, 101, 29, 0.3);
+      }
+
+      .skill-logo {
+        margin-bottom: 2rem;
+        position: relative;
+      }
+
+      .skill-logo i {
+        font-size: 5rem;
+        color: #666;
+        transition: all 0.4s ease;
+        filter: drop-shadow(0 0 0 transparent);
+      }
+
+      /* Skill-specific colors on hover */
+      .skill-item[data-skill="PHP"]:hover .skill-logo i {
+        color: #777BB4;
+        filter: drop-shadow(0 0 20px #777BB4);
+        animation: pulse 2s infinite;
+      }
+
+      .skill-item[data-skill="HTML"]:hover .skill-logo i {
+        color: #E34F26;
+        filter: drop-shadow(0 0 20px #E34F26);
+        animation: pulse 2s infinite;
+      }
+
+      .skill-item[data-skill="CSS"]:hover .skill-logo i {
+        color: #1572B6;
+        filter: drop-shadow(0 0 20px #1572B6);
+        animation: pulse 2s infinite;
+      }
+
+      .skill-item[data-skill="JavaScript"]:hover .skill-logo i {
+        color: #F7DF1E;
+        filter: drop-shadow(0 0 20px #F7DF1E);
+        animation: pulse 2s infinite;
+      }
+
+      .skill-item[data-skill="React"]:hover .skill-logo i {
+        color: #61DAFB;
+        filter: drop-shadow(0 0 20px #61DAFB);
+        animation: spin 3s linear infinite;
+      }
+
+      .skill-item[data-skill="Node.js"]:hover .skill-logo i {
+        color: #339933;
+        filter: drop-shadow(0 0 20px #339933);
+        animation: pulse 2s infinite;
+      }
+
+      .skill-item[data-skill="Python"]:hover .skill-logo i {
+        color: #3776AB;
+        filter: drop-shadow(0 0 20px #3776AB);
+        animation: pulse 2s infinite;
+      }
+
+      .skill-item[data-skill="Git"]:hover .skill-logo i {
+        color: #F05032;
+        filter: drop-shadow(0 0 20px #F05032);
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+      }
+
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      .skill-item h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: white;
+        transition: color 0.3s ease;
+      }
+
+      .skill-item:hover h3 {
+        color: #e3651d;
+      }
+
+      .skill-item p {
+        font-size: 1.4rem;
+        color: #bbb;
+        margin: 0;
+        transition: color 0.3s ease;
+      }
+
+      .skill-item:hover p {
+        color: #ddd;
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+
+        nav {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          padding: 1rem 0;
+          z-index: 1000;
+        }
+
+        nav.active {
+          display: flex;
+        }
+
+        nav a {
+          margin: 1rem 0;
+          font-size: 1.6rem;
+          text-align: center;
+        }
+
+        .skills {
+          padding: 6rem 5% 3rem;
+        }
+
+        .skills h1 {
+          font-size: 3rem;
+        }
+
+        .skills-container {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 2rem;
+        }
+
+        .skill-item {
+          padding: 2rem 1.5rem;
+        }
+
+        .skill-logo i {
+          font-size: 4rem;
+        }
+
+        .skill-item h3 {
+          font-size: 1.8rem;
+        }
+
+        .skill-item p {
+          font-size: 1.2rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        nav a {
+          margin-left: 2rem;
+          font-size: 1.5rem;
+        }
+
+        .skills h1 {
+          font-size: 2.5rem;
+        }
+
+        .skills-container {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        .skill-logo i {
+          font-size: 3.5rem;
+        }
+
+        .skill-item h3 {
+          font-size: 1.6rem;
+        }
+
+        .skill-item p {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const nav = document.querySelector("nav");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+
+      // Add click sound effect (optional)
+      const skillItems = document.querySelectorAll('.skill-item');
+      skillItems.forEach(item => {
+        item.addEventListener('click', () => {
+          // You can add click functionality here
+          console.log(`Clicked on ${item.dataset.skill}`);
+        });
+      });
+    </script>
+  </body>
+</html>

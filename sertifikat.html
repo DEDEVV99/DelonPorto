@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sertifikat - Delon Dede Afdilah</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Delon Dede Afdilah</a>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Beranda</a>
+        <a href="#sertifikat.html">Sertifikat Saya</a>
+        <a href="skills.html">Keahlian</a>
+        <a href="contact.html">Hubungi Saya</a>
+      </nav>
+    </header>
+
+    <div class="certificate-section">
+      <div class="certificate-container">
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="sertif/sertif1.png" alt="Sertifikat Saya">
+          </div>
+          <div class="certificate-content">
+            <h3>Sertifikat Cyber Academy</h3>
+            <p>Sertifikita ini bukti saya pernah mengikuti Cyber Academy. Cyber Academy adalah sebuah organisasi yang bertujuan untuk meningkatkan kemampuan pengguna cyber dan meningkatkan kualitas kerja yang diberikan oleh mereka melalui program yang mereka sediakan dan saya lulus mengikuti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="certificate-section">
+      <div class="certificate-container">
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="sertif/sertif2.png" alt="Sertifikat Saya">
+          </div>
+          <div class="certificate-content">
+            <h3>Sertifikat PKKMB</h3>
+            <p>Sertifikat ini merupakan bukti saya mengikuti program acara kampus Universitas Labuhan Batu, Saya berperan sebagai Mahasiswa Baru.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="certificate-section">
+      <div class="certificate-container">
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="sertif/sertif3.png" alt="Sertifikat Saya">
+          </div>
+          <div class="certificate-content">
+            <h3>Sertifikat Seminar</h3>
+            <p>Saya mendapatkan sertifikat seminar dari Organisasi HIMPRO TI(HIMPUNAN PRODI) di Universitas Labuhan Batu dan saya ikut menjadi panitia pelaksana seminar ikut mensukseskan acara tersebut ber tema "MEMBANGUN SMART HOME SENDIRI DENGAN TEKNOLOGI IOT".</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      body {
+        background-color: #191919;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        padding: 1rem 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .logo {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #e3651d;
+        text-decoration: none;
+      }
+
+      .menu-toggle {
+        display: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+      }
+
+      nav {
+        display: flex;
+        gap: 2rem;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 4rem;
+        font-size: 1.8rem;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+      }
+
+      nav a.active {
+        color: #e3651d;
+        border-bottom: 3px solid #e3651d;
+      }
+
+      nav a:hover {
+        color: #e3651d;
+        border-bottom: 3px solid #e3651d;
+      }
+
+      /* Certificate Section Styles */
+      .certificate-section {
+        padding: 8rem 9% 5rem;
+        background-color: #191919;
+      }
+
+      .certificate-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .certificate-card {
+        background: linear-gradient(145deg, #222, #2a2a2a);
+        border-radius: 15px;
+        padding: 3rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .certificate-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(227, 101, 29, 0.2);
+      }
+
+      .certificate-image {
+        width: 100%;
+        height: 300px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        border: 2px solid #e3651d;
+        position: relative;
+      }
+
+      .certificate-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.3s ease;
+      }
+
+      .certificate-image:hover img {
+        transform: scale(1.05);
+      }
+
+      .certificate-content h3 {
+        font-size: 2.5rem;
+        color: #e3651d;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .certificate-content p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: #bbb;
+        text-align: center;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+
+        nav {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          padding: 1rem 0;
+          z-index: 1000;
+        }
+
+        nav.active {
+          display: flex;
+        }
+
+        nav a {
+          margin: 1rem 0;
+          font-size: 1.6rem;
+          text-align: center;
+        }
+
+        .certificate-section {
+          padding: 5rem 5% 3rem;
+        }
+
+        .certificate-card {
+          padding: 2rem;
+        }
+
+        .certificate-image {
+          height: 250px;
+        }
+
+        .certificate-content h3 {
+          font-size: 2rem;
+        }
+
+        .certificate-content p {
+          font-size: 1.4rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        nav a {
+          margin-left: 2rem;
+          font-size: 1.5rem;
+        }
+
+        .certificate-section {
+          padding: 4rem 3% 2rem;
+        }
+
+        .certificate-card {
+          padding: 1.5rem;
+        }
+
+        .certificate-image {
+          height: 200px;
+        }
+
+        .certificate-content h3 {
+          font-size: 1.8rem;
+        }
+
+        .certificate-content p {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const nav = document.querySelector("nav");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
